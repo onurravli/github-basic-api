@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 from bs4 import BeautifulSoup as bs
 import requests
 import json
@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'hemsehrim memleket nire? by onurravli'
+    return render_template('./public/index.html')
 
 
 @app.route('/<string:user>')
