@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'github basic api.'
+    return 'hemsehrim memleket nire? by onurravli'
 
 
 @app.route('/<string:user>')
